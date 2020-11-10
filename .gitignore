@@ -20,7 +20,7 @@
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 .idea/sonarlint-state.xml
-.idea/sonarlint
+/.idea/sonarlint/
 
 # Gradle
 .idea/**/gradle.xml
@@ -44,3 +44,4 @@ target/
 build/
 logs/
 data/
+
