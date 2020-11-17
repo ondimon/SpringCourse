@@ -1,4 +1,4 @@
-package lessontwo.mvc;
+package lessonthree.hibernate;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;

@@ -1,14 +1,32 @@
-package lessontwo.mvc.model;
+package lessonthree.hibernate.model;
 
+import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
+@Entity
+@Table(name = "products")
 public class Product {
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "title")
     private String title;
+
+    @Column(name = "cost")
     private float cost;
 
-    public Product() {
+    @ManyToMany
+    @JoinTable(
+            name = "order_products",
+            joinColumns = @JoinColumn(name = "product_id"),
+            inverseJoinColumns = @JoinColumn(name = "order_id")
+    )
+    private List<Order> orders;
 
+    public Product() {
     }
 
     public Long getId() {
@@ -41,6 +59,9 @@ public class Product {
         this.cost = cost;
     }
 
+    public List<Order> getOrders() {
+        return orders;
+    }
     @Override
     public boolean equals(Object o) {       if ( this == o ) return true;
         if ( o == null || getClass() != o.getClass() ) return false;

@@ -8,26 +8,25 @@
 </head>
 
 <body>
-    <h1>Products list:</h1>
+    <h1>Orders list:</h1>
     <table cellpadding="5">
         <thead>
         <tr>
             <td>Id</td>
-            <td>Title</td>
-            <td>Cost</td>
+            <td>Customer</td>
+            <td>Date</td>
             <td>...</td>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="s : ${products}">
+        <tr th:each="s : ${orders}">
                 <td th:text="${s.id}"></td>
-                <td th:text="${s.title}"></td>
-                <td th:text="${s.cost}"></td>
-                <td><a th:href="@{'/products/edit/' + ${s.id}}">edit</a></td>
+                <td th:text="${s.customer.first_name}"></td>
+                <td th:text="${s.date}"></td>
+                <td><a th:href="@{'/orders/info/' + ${s.id}}">info</a></td>
         </tr>
         </tbody>
     </table>
-    <a th:href="@{/products/add}">add new product</a>
     <br>
     <a th:href="@{/}">to main page</a>
 </body>

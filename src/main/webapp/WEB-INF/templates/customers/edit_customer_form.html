@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Spring MVC GeekApp</title>
+</head>
+
+<body>
+    <h1>Edit customer</h1>
+    <form th:action="@{/customers/edit}" th:object="${customer}" method="POST">
+        <input hidden th:field="*{id}"/>
+        <br>
+        Name: <input th:field="*{first_name}"/>
+        <br>
+        <input type="submit" value="Submit" />
+    </form>
+    <br>
+    <a th:href="@{/}">to main page</a>
+</body>
+</html>

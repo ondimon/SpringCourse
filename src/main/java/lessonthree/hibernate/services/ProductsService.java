@@ -1,11 +1,9 @@
-package lessontwo.mvc.services;
+package lessonthree.hibernate.services;
 
-import lessontwo.mvc.model.Product;
-import lessontwo.mvc.repositories.ProductRepository;
+import lessonthree.hibernate.model.Product;
+import lessonthree.hibernate.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Collections;
 import java.util.List;
 
 @Service

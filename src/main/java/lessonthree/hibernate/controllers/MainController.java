@@ -1,4 +1,4 @@
-package lessontwo.mvc.controllers;
+package lessonthree.hibernate.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

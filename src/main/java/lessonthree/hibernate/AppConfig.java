@@ -1,4 +1,4 @@
-package lessontwo.mvc;
+package lessonthree.hibernate;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +12,7 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan("lessontwo.mvc")
+@ComponentScan("lessonthree.hibernate")
 public class AppConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {

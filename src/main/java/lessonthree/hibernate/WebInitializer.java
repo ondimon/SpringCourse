@@ -1,4 +1,4 @@
-package lessontwo.mvc;
+package lessonthree.hibernate;
 
 import javax.servlet.Filter;
 import org.springframework.web.filter.CharacterEncodingFilter;
