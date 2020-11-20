@@ -15,9 +15,9 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
 <!--        <property name="hibernate.enable_lazy_load_no_trans">true</property>-->
 
-        <mapping class="lessonthree.hibernate.model.Product"/>
-        <mapping class="lessonthree.hibernate.model.Customer"/>
-        <mapping class="lessonthree.hibernate.model.Order"/>
-        <mapping class="lessonthree.hibernate.model.OrderProduct"/>
+        <mapping class="lessonfour.jpa.model.Product"/>
+        <mapping class="lessonfour.jpa.model.Customer"/>
+        <mapping class="lessonfour.jpa.model.Order"/>
+        <mapping class="lessonfour.jpa.model.OrderProduct"/>
     </session-factory>
 </hibernate-configuration>

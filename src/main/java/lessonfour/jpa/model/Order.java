@@ -1,4 +1,4 @@
-package lessonthree.hibernate.model;
+package lessonfour.jpa.model;
 
 import javax.persistence.*;
 import java.util.Date;

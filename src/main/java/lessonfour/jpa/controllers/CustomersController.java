@@ -1,7 +1,7 @@
-package lessonthree.hibernate.controllers;
+package lessonfour.jpa.controllers;
 
-import lessonthree.hibernate.model.Customer;
-import lessonthree.hibernate.services.CustomerService;
+import lessonfour.jpa.model.Customer;
+import lessonfour.jpa.services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

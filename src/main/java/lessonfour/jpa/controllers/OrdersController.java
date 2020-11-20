@@ -1,7 +1,7 @@
-package lessonthree.hibernate.controllers;
+package lessonfour.jpa.controllers;
 
-import lessonthree.hibernate.model.Order;
-import lessonthree.hibernate.services.OrdersService;
+import lessonfour.jpa.model.Order;
+import lessonfour.jpa.services.OrdersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

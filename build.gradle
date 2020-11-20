@@ -1,6 +1,7 @@
 plugins {
     id 'war'
     id "org.gretty" version "3.0.3"
+    id "io.freefair.lombok" version "5.3.0"
 }
 
 group 'ru.dimon.spring'
@@ -31,6 +32,7 @@ dependencies {
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.22'
     // https://mvnrepository.com/artifact/com.h2database/h2
     compile group: 'com.h2database', name: 'h2', version: '1.4.200'
+    compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.2.5.RELEASE'
 
 }
 
